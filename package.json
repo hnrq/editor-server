@@ -1,18 +1,16 @@
 {
-  "name": "server",
+  "name": "editor-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "NodeJS server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Henrique Ramos",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.1",
     "express": "^4.17.1",
-    "socket.io": "^2.3.0",
-    "ws": "^7.2.1"
+    "socket.io": "^2.3.0"
   }
 }
