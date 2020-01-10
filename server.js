@@ -4,12 +4,11 @@ var app = require('express')();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
-const HOST = '0.0.0.0';
-const PORT = 8080;
+const PORT = 4001;
 
-server.listen(PORT, HOST);
+server.listen(PORT);
 
-log(`Running on http://${HOST}:${PORT}`);
+log(`Running on port ${PORT}`);
 
 app.get('/', function(req, res) {
   res.send("It's working!");
