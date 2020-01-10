@@ -6,11 +6,12 @@ const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
+const HOST = '0.0.0.0';
 const PORT = process.env.PORT || 4001;
 
-server.listen(PORT);
+server.listen(PORT, HOST);
 
-log(`Running on port ${PORT}`);
+log(`Running on port ${HOST}:${PORT}`);
 
 const root = require('path').join(__dirname, 'client', 'build');
 app.use(express.static(root));
@@ -25,6 +26,11 @@ io.on('connection', (socket) => {
     log(evt);
     socket.broadcast.emit('message', evt);
   });
+});
+
+process.on('SIGINT', function() {
+  server.close();
+  process.exit();
 });
 
 io.on('disconnect', () => {
