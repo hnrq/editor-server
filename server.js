@@ -12,7 +12,7 @@ server.listen(PORT);
 
 log(`Running on port ${PORT}`);
 
-const root = require('path').join('./client/build');
+const root = require('path').join(__dirname, 'client', 'build');
 app.use(express.static(root));
 
 app.get('*', (req, res) => {
