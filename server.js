@@ -4,7 +4,7 @@ var app = require('express')();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
 
-const PORT = 4001;
+const PORT = process.env.PORT || 4001;
 
 server.listen(PORT);
 
