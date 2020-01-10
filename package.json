@@ -5,13 +5,19 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "server": "nodemon index.js",
+    "client-install": "npm install --prefix client",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "Henrique Ramos",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^5.0.2",
     "express": "^4.17.1",
+    "nodemon": "^2.0.2",
     "socket.io": "^2.3.0"
   }
 }
