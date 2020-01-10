@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "NodeJS server",
   "main": "server.js",
-  "homepage": "http://ancient-brushlands-39500.herokuapp.com/",
+  "homepage": "https://murmuring-everglades-31838.herokuapp.com/",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon index.js",
