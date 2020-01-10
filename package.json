@@ -2,9 +2,10 @@
   "name": "editor-server",
   "version": "1.0.0",
   "description": "NodeJS server",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "keywords": [],
   "author": "Henrique Ramos",

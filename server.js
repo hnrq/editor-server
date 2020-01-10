@@ -1,8 +1,11 @@
 const { log } = console;
 // initialize http server, socket.io and port number
-var app = require('express')();
+const express = require('express');
+
+const app = express();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
+const path = require('path');
 
 const PORT = process.env.PORT || 4001;
 
@@ -10,8 +13,11 @@ server.listen(PORT);
 
 log(`Running on port ${PORT}`);
 
-app.get('/', function(req, res) {
-  res.send("It's working!");
+const root = require('path').join(__dirname, 'client', 'build');
+app.use(express.static(root));
+
+app.get('*', (req, res) => {
+  res.sendFile('index.html', { root });
 });
 
 io.on('connection', (socket) => {
@@ -22,6 +28,6 @@ io.on('connection', (socket) => {
   });
 });
 
-io.on('disconnect', (evt) => {
+io.on('disconnect', () => {
   log('some people left');
 });
