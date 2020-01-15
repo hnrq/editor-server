@@ -8,7 +8,7 @@ const io = require('socket.io')(server);
 
 const HOST = '0.0.0.0';
 const PORT = process.env.PORT || 4001;
-var latestMessage;
+var latestMessage = require('./initialText.json');
 
 server.listen(PORT, HOST);
 
@@ -23,10 +23,12 @@ app.get('*', (req, res) => {
 
 io.on('connection', (socket) => {
   log('connected');
-  if (latestMessage) socket.send(latestMessage);
+  socket.send(
+    JSON.stringify({ command: 'NEW_MESSAGE', message: latestMessage })
+  );
   socket.on('message', (evt) => {
     log(evt);
-    latestMessage = evt;
+    latestMessage = JSON.parse(evt).message;
     socket.broadcast.emit('message', evt);
   });
 });
