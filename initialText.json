@@ -1,0 +1,106 @@
+{
+  "blocks": [
+    {
+      "key": "1q08l",
+      "text": "Oy, hello there!\n\nThis is my text editor, it allows you to add Bold, Italic, Underlined, Monospaced and links. It also has some other cool features, like highlighting #hashtags when typing, links, like: www.youtube.com, or even https://www.youtube.com, those are all the available inline styles, but there are also",
+      "type": "unstyled",
+      "depth": 0,
+      "inlineStyleRanges": [
+        { "offset": 63, "length": 4, "style": "BOLD" },
+        { "offset": 69, "length": 6, "style": "ITALIC" },
+        { "offset": 77, "length": 10, "style": "UNDERLINE" },
+        { "offset": 89, "length": 10, "style": "CODE" }
+      ],
+      "entityRanges": [{ "offset": 104, "length": 5, "key": 0 }],
+      "data": {}
+    },
+    {
+      "key": "8nfa8",
+      "text": "BLOCK STYLES",
+      "type": "header-one",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "5fa60",
+      "text": "Like those headings that shrink",
+      "type": "header-two",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "1kltb",
+      "text": "From 1 through ",
+      "type": "header-three",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "8tejr",
+      "text": "To 4",
+      "type": "header-four",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "1v6np",
+      "text": "I can also add a quote here if I'm a really smart guy that reads a lot of interesting texts",
+      "type": "blockquote",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "creu",
+      "text": "I can make a nice bulleted list",
+      "type": "unordered-list-item",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "10iht",
+      "text": "Because I'm an organized person",
+      "type": "unordered-list-item",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "2t3l4",
+      "text": "Not really, but let's pretend that I am",
+      "type": "unordered-list-item",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    },
+    {
+      "key": "apjg",
+      "text": "I can also make an ordered list that allows me ",
+      "type": "ordered-list-item",
+      "depth": 0,
+      "inlineStyleRanges": [],
+      "entityRanges": [],
+      "data": {}
+    }
+  ],
+  "entityMap": {
+    "0": {
+      "type": "LINK",
+      "mutability": "MUTABLE",
+      "data": { "url": "https://www.youtube.com/watch?v=09UliRgwXw8" }
+    }
+  }
+}
