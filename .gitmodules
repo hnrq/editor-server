@@ -1,4 +1,4 @@
 
 [submodule "client"]
 	path = client
-	url = https://github.com/alberoneramos/rich-text-editor
+	url = git@github.com:AlberoneRamos/rich-text-editor.git
