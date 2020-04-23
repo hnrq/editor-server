@@ -4,6 +4,9 @@
   "description": "NodeJS server",
   "main": "server.js",
   "homepage": "https://slate-editor.herokuapp.com/",
+  "engines": {
+    "node": "13.x.x"
+  },
   "scripts": {
     "start": "node server.js",
     "server": "nodemon index.js",
