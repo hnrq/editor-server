@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "NodeJS server",
   "main": "server.js",
-  "homepage": "https://murmuring-everglades-31838.herokuapp.com/",
+  "homepage": "https://slate-editor.herokuapp.com/",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon index.js",
@@ -16,9 +16,9 @@
   "author": "Henrique Ramos",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^5.0.2",
+    "concurrently": "^5.1.0",
     "express": "^4.17.1",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.3",
     "normalizr": "^3.6.0",
     "socket.io": "^2.3.0"
   }
