@@ -13,7 +13,7 @@
     "client-install": "npm install --prefix client",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd rich-text-editor && npm install && npm run build"
   },
   "keywords": [],
   "author": "Henrique Ramos",
