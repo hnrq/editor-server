@@ -14,7 +14,7 @@ server.listen(PORT, HOST);
 
 log(`Running on port ${HOST}:${PORT}`);
 
-const root = require('path').join(__dirname, 'client', 'build');
+const root = require('path').join(__dirname, 'rich-text-editor', 'build');
 app.use(express.static(root));
 
 app.get('*', (req, res) => {
@@ -33,7 +33,7 @@ io.on('connection', (socket) => {
   });
 });
 
-process.on('SIGINT', function() {
+process.on('SIGINT', function () {
   server.close();
   process.exit();
 });
